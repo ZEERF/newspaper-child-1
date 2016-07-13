@@ -1,0 +1,90 @@
+/*
+Theme Name:     Newspaper 7 Child theme
+Theme URI: 		http://themeforest.net/user/tagDiv/portfolio
+Description:    Child theme made by tagDiv
+Author:         tagDiv
+Author URI: 	http://themeforest.net/user/tagDiv/portfolio
+Template:       Newspaper
+Version:        7.0c
+*/
+
+
+/*  ----------------------------------------------------------------------------
+    This file will load automatically when the child theme is active. You can use it
+    for custom CSS.
+*/
+
+@import url("../newspaper7/style.css");
+
+/* =Theme customization starts here
+------------------------------------------------------- */
+
+@font-face {
+	font-family: Alef;
+	src: local('Alef-Regular'), url("fonts/Alef-Regular.ttf") format('truetype');
+	font-weight: normal;
+}
+
+/*====== RTL ======*/
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Alef;
+}
+body {
+	/*direction: rtl;*/
+	unicode-bidi: embed;
+	font-family: Alef !important;
+}
+.td-arrow-list li:before {
+	float: right !important;
+	margin-left: 20px !important;
+	content: '\e802' !important;
+}
+.td-recipes .dropcap1 {
+	float: right;
+	margin-right: -10px;
+	margin-left: 10px;
+}
+.td-post-sharing-bottom {
+	direction: ltr;
+}
+.td-pb-span8.td-main-content {
+	direction: rtl;
+}
+.author-box-wrap {
+	direction: ltr;
+}
+.td-related-right{
+  float: left;
+}
+
+.td-post-title > h1{
+  background-color: #FAD86C;
+}
+
+#menu-td-demo-header-menu-1{
+  float: right;
+}
+
+.td-header-main-menu{
+  padding-right: 150px;
+}
+
+.td_video_playlist_column_3{
+  direction: ltr;
+}
+/*sidebar*/
+
+.td-pb-row [class*="td-pb-span"] {
+	float: right;
+}
+.td-ss-main-sidebar {
+	direction: rtl;
+}
+.widget_categories li span {
+	float: left;
+}
+
+#td-mobile-nav{
+	display: none;
+}
